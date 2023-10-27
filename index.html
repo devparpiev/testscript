@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS Style Connected -->
+    <link rel="stylesheet" href="./style.css">
+    <!-- CSS Input Connected -->
+    <link rel="stylesheet" href="./input.css">
+    <!-- CSS Main Connected -->
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <title>Main</title>
+</head>
+
+<body>
+    <!-- Navbar Logo -->
+    <div class="navlogo">
+        <a href="./index.html" class="nav-branding">Hacript</a>
+    </div>
+    <header>
+        <div class="containner">
+            <nav class="navbar">
+                <!-- Header Menu Navbar -->
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="./index.html" class="nav-link" id="mainPage">Main</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./answ.html" class="nav-link">Q&A</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./web.html" class="nav-link">Websites</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./about.html" class="nav-link">About</a>
+                    </li>
+                </ul>
+
+                <!-- <input type="checkbox" id="mode"> -->
+                <!-- Hamburger Menu Bars -->
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+
+            </nav>
+        </div>
+    </header>
+
+    <!-- ================ Input Output Section Start ================ -->
+
+    <section>
+
+        <div class="containner">
+            <form>
+                <textarea name="text" id="userInput" cols="30" rows="10" placeholder="Insert your input..."></textarea>
+                <br>
+                <div class="choices">
+                    <div class="firstChoice">
+                        <h3 class="From">From</h3>
+                        <select id="operationInput">
+                            <option value="text">Text</option>
+                            <option value="base64">Base64</option>
+                            <option value="caesar">Caesar Cipher</option>
+                            <option value="binary">Binary</option>
+                            <option value="octal">Octal</option>
+                            <option value="hexadecimal">Hexadecimal</option>
+                        </select>
+                    </div>
+                    <div class="secondChoice">
+                        <h3 class="To">To</h3>
+                        <select id="operationOutput">
+                            <option value="text">Text</option>
+                            <option value="base64">Base64</option>
+                            <option value="caesar">Caesar Cipher</option>
+                            <option value="binary">Binary</option>
+                            <option value="octal">Octal</option>
+                            <option value="hexadecimal">Hexadecimal</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="convertdiv">
+                    <input class="Convert" type="button" value="Convert" onclick="performOperation()">
+                </div>
+                <div class="buttons">
+                    <input class="ClearInput" type="button" value="Clear Input" onclick="clearInput()">
+                    <input class="ClearResult" type="button" value="Clear Output" onclick="clearResult()">
+                </div>
+                <textarea name="output" id="output" cols="30" rows="10" placeholder="This is your output..."
+                    readonly></textarea>
+            </form>
+        </div>
+    </section>
+     <!-- ========================== Password Generator ========================== -->
+    <div class="Mainn">
+        <div class="containner">
+            <div class="container">
+                <h2 class="title">Password Generator</h2>
+                <div class="result">
+                    <div class="result__title field-title">Generated Password</div>
+                    <div class="result__info right">click to copy</div>
+                    <div class="result__info left">copied</div>
+                    <div class="result__viewbox" id="result">CLICK GENERATE</div>
+                    <button id="copy-btn" style="--x: 0; --y: 0"><i class="far fa-copy"></i></button>
+                </div>
+                <div class="length range__slider" data-min="4" data-max="32">
+                    <div class="length__title field-title" data-length='0'>length:</div>
+                    <input id="slider" type="range" min="4" max="32" value="16" />
+                </div>
+
+                <div class="settings">
+                    <span class="settings__title field-title">settings</span>
+                    <div class="setting">
+                        <input type="checkbox" id="uppercase" checked />
+                        <label for="uppercase">Include Uppercase</label>
+                    </div>
+                    <div class="setting">
+                        <input type="checkbox" id="lowercase" checked />
+                        <label for="lowercase">Include Lowercase</label>
+                    </div>
+                    <div class="setting">
+                        <input type="checkbox" id="number" checked />
+                        <label for="number">Include Numbers</label>
+                    </div>
+                    <div class="setting">
+                        <input type="checkbox" id="symbol" />
+                        <label for="symbol">Include Symbols</label>
+                    </div>
+                </div>
+
+                <button class="btn generate" id="generate">Generate Password</button>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <!-- JS Connected -->
+    <script src="./script.js"></script>
+    <script src="./index.js"></script>
+</body>
+
+</html>

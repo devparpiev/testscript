@@ -1,0 +1,88 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Style the buttons that are used to open and close the accordion panel */
+.title-div {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+    margin-top: 100px;
+}
+
+.title-answ {
+    color: white;
+    font-size: 30px;
+}
+
+
+
+.faq {
+    list-style: none;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.faq li {
+    background: #f2f2f2;
+    border-bottom: 1px solid #ccc;
+}
+
+.faq li:first-child {
+    border-top: 1px solid #ccc;
+}
+
+.q {
+    padding: 1em 0;
+    border-left: 10px #f2f2f2 solid;
+    cursor: pointer;
+}
+
+.q:hover,
+.q:hover .arrow {
+    border-left-color: green;
+}
+
+.arrow {
+    display: inline-block;
+    margin: 0 0.5em;
+    width: 0;
+    height: 0;
+    border-top: 6px solid transparent;
+    border-left: 10px solid #555;
+    border-bottom: 6px solid transparent;
+    transition: 0.3s;
+}
+
+.faq p {
+    color: #484343;
+    line-height: 25px;
+}
+
+.a {
+    overflow: hidden;
+    height: 0;
+    padding: 0 1em 0 3.3em;
+}
+
+.a-opened {
+    padding: 1em 1em 2em 3.3em;
+    height: initial;
+}
+
+.arrow-rotated {
+    transform: rotate(90deg);
+}
+
+.a-cyber {
+    color: green;
+    text-decoration: underline;
+}
+
+.suggest {
+    color: white;
+    font-size: 18px;
+    margin-top: 50px;
+}

@@ -1,0 +1,216 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.containner {
+    width: 1110px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* =============================== input insert start =============================== */
+
+#userInput {
+    margin-top: 100px;
+    width: 650px;
+    height: 250px;
+    border-radius: 15px;
+    border: none;
+    padding: 25px 50px;
+}
+
+textarea:focus,
+input:focus {
+    outline: none;
+}
+
+#userInput::placeholder {
+    color: #1FBD1F;
+    font-weight: 800;
+    font-size: 16px;
+}
+
+/* =============================== input insert End =============================== */
+
+/* ------------------ Choices Start ------------------ */
+
+.From {
+    margin-left: 83px;
+    margin-top: 25px;
+    color: white;
+}
+
+.To {
+    margin-left: 93px;
+    margin-top: 25px;
+    color: white;
+}
+
+.choices {
+    display: flex;
+    gap: 200px;
+    justify-content: space-around;
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
+    border-radius: 5px;
+    border: 1px solid #FFF;
+    background: #FFF;
+    width: 200px;
+    height: 40px;
+    margin-top: 10px;
+    font-weight: 400;
+    font-size: 16px;
+    text-align-last: center;
+    cursor: pointer;
+}
+
+
+/* ------------------ Choices End ------------------ */
+
+
+/* \\\\\\\\\\\\\\\\  Buttons Start  ///////////////// */
+
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.convertdiv {
+    display: flex;
+    justify-content: center;
+}
+
+:root {
+    /* button */
+  --radius: 10px;
+  --wide: 30px;
+  --height: 10px;
+  --3d: 8px;
+  
+  /* colors */
+  --color-w: #fff;
+  --color-1: #85bf31;
+  --color-1dark: #609612;
+  --color-2: #f7a41d;
+  --color-3: #ebebeb;
+}
+
+.Convert {
+    font-size: 15px;
+    position: relative;
+    width: auto;
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    color: var(--color-w);
+    background: var(--color-1);
+    border-radius: var(--radius);
+    padding: var(--height) var(--wide);
+    /* margin: 10px; */
+    top: 0px;
+    border: none;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    transition: all 0.2s ease;
+
+    -webkit-box-shadow: 0px var(--3d) 0px var(--color-1dark);
+    -moz-box-shadow: 0px var(--3d) 0px var(--color-1dark);
+    box-shadow: 0px var(--3d) 0px var(--color-1dark);
+}
+
+.Convert:active {
+    -webkit-box-shadow: 0px 0px 0px var(--color-1dark);
+    -moz-box-shadow: 0px 0px 0px var(--color-1dark);
+    box-shadow: 0px 0px 0px var(--color-1dark);
+    position: relative;
+    top: var(--3d);
+}
+
+.ClearInput {
+    width: 100px;
+    height: 40px;
+    background: #85bf31;
+    border-radius: 18px;
+    border: none;
+    color: #FFF;
+    font-size: 15px;
+    font-weight: 400;
+    margin-left: 50px;
+    cursor: pointer;
+    transition: .6s;
+}
+
+.ClearInput:hover{
+    background: #fff;
+    color: black;
+    font-weight: 500;
+    border: 3px solid #85bf31;
+}
+
+.ClearResult {
+    width: 100px;
+    height: 40px;
+    background: #85bf31;
+    border-radius: 18px;
+    border: none;
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 400;
+    margin-right: 50px;
+    cursor: pointer;
+    transition: .6s;
+}
+
+.ClearResult:hover{
+    background: #fff;
+    color: black;
+    font-weight: 500;
+    border: 3px solid #85bf31;
+}
+
+/* \\\\\\\\\\\\\\\\  Buttons End ///////////////// */
+
+
+/* =============================== Output Start =============================== */
+
+
+#output {
+    margin-top: 30px;
+    width: 650px;
+    height: 250px;
+    border-radius: 15px;
+    border: none;
+    padding: 25px 50px;
+
+}
+
+#output::placeholder {
+    color: #1FBD1F;
+    font-weight: 800;
+    font-size: 16px;
+}
+
+/* =============================== Output End =============================== */
